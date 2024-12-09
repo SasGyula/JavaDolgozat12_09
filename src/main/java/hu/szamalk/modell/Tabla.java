@@ -76,7 +76,7 @@ public class Tabla {
     public int uresOszlopokSzama(){
         int s = 0;
         for(int i = 0; i < t[0].length; i++){
-            if(uresOszlop() == false){
+            if(uresOszlop(i) == true){
                 s++;
             }
         }
@@ -85,7 +85,7 @@ public class Tabla {
     public int uresSorokSzama(){
         int s = 0;
         for(int i = 0; i < t.length; i++){
-            if(uresSor(i) == false){
+            if(uresSor(i) == true){
                 s++;
             }
         }
