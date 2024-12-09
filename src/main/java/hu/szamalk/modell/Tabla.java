@@ -1,8 +1,11 @@
 package hu.szamalk.modell;
 
+import java.util.Random;
+
 public class Tabla {
     private Character [][] t;
     private Character uresCella;
+    private Random rn = new Random();
 
     public Tabla(Character uresCella) {
         t = new Character[8][8];
@@ -17,8 +20,14 @@ public class Tabla {
         }
     }
 
-    public void elhelyez(){
-
+    public void elhelyez(int n){
+        int rnOszlop;
+        int rnSor;
+        for(int i = 0; i < n; i++){
+            rnOszlop = rn.nextInt(0,8);
+            rnSor = rn.nextInt(0,8);
+            this.t[rnSor][rnOszlop] = 'K';
+        }
     }
     public void fajlbaIr(){
 
