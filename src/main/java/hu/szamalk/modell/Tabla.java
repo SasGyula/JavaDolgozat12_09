@@ -74,9 +74,21 @@ public class Tabla {
         return s;
     }
     public int uresOszlopokSzama(){
-        return 0;
+        int s = 0;
+        for(int i = 0; i < t[0].length; i++){
+            if(uresOszlop() == false){
+                s++;
+            }
+        }
+        return s;
     }
     public int uresSorokSzama(){
-        return 0;
+        int s = 0;
+        for(int i = 0; i < t.length; i++){
+            if(uresSor(i) == false){
+                s++;
+            }
+        }
+        return s;
     }
 }
