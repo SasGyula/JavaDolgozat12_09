@@ -1,6 +1,8 @@
 package hu.szamalk.modell;
 
 public class Tabla {
+    private String [][] T;
+    private Character UresCella;
 
     public void elhelyez(){
 
