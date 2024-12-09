@@ -35,5 +35,7 @@ public class Program {
             e.printStackTrace();
         }
     }
+
+    //vége
 }
 
