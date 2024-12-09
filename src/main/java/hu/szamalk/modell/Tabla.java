@@ -49,11 +49,29 @@ public class Tabla {
     public void tabla(){
 
     }
-    public void uresOszlop(){
-
+    public boolean uresSor(int sor){
+        boolean s = true;
+        int i = 0;
+        while (i < t[sor].length) {
+            if (t[sor][i] == 'K') {
+                s = false;
+                break;
+            }
+            i++;
+        }
+        return s;
     }
-    public void uresSor(){
-
+    public boolean uresOszlop(int oszlop){
+        boolean s = true;
+        int i = 0;
+        while (i < t.length) {
+            if (t[i][oszlop] == 'K') {
+                s = false;
+                break;
+            }
+            i++;
+        }
+        return s;
     }
     public int uresOszlopokSzama(){
         return 0;
