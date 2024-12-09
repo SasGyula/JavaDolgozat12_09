@@ -23,8 +23,19 @@ public class Tabla {
     public void fajlbaIr(){
 
     }
-    public void megjelenit(){
-
+    public String megjelenit(){
+        String s = "";
+        for(int i = 0; i < t.length; i++){
+            for(int j = 0; j < t[i].length; j++){
+                if(j % 8 == 0){
+                    s += '\n';
+                    s += t[i][j];
+                }else {
+                    s += t[i][j];
+                }
+            }
+        }
+        return s;
     }
     public void tabla(){
 
