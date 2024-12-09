@@ -1,8 +1,21 @@
 package hu.szamalk.modell;
 
 public class Tabla {
-    private String [][] T;
-    private Character UresCella;
+    private Character [][] t;
+    private Character uresCella;
+
+    public Tabla(Character uresCella) {
+        t = new Character[8][8];
+        this.uresCella = uresCella;
+        feltolt();
+    }
+    private void feltolt(){
+        for(int i = 0; i < t.length; i++){
+            for(int j = 0; j < t[i].length; j++){
+                t[i][j] = uresCella;
+            }
+        }
+    }
 
     public void elhelyez(){
 
