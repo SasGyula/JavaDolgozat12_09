@@ -38,7 +38,7 @@ public class FemAlakzatokProgram {
     public FemAlakzat minV() {
         int seged = 0;
         for(int i=0; i<lista.size();i++){
-            if(lista.get(i).terfogat() < lista.get(i-1).terfogat()){
+            if(lista.get(i).terfogat() < lista.get(seged).terfogat()){
                 seged = i;
             }
         }
@@ -46,6 +46,12 @@ public class FemAlakzatokProgram {
     }
 
     public FemAlakzat maxV() {
-        return null;
+        int seged = 0;
+        for(int i=0; i<lista.size();i++){
+            if(lista.get(i).terfogat() > lista.get(seged).terfogat()){
+                seged = i;
+            }
+        }
+        return lista.get(seged);
     }
 }
