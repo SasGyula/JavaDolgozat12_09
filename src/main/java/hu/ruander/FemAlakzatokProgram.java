@@ -28,8 +28,8 @@ public class FemAlakzatokProgram {
     public double gombokOsszSuly() {
         double osszSuly = 0;
 //        for (FemAlakzat femAlakzat : lista) {
-//            if(femAlakzat.equals(Gomb)){
-//
+//            if(lista.contains(Gomb)) {
+//                osszSuly += femAlakzat.suly();
 //            }
 //        }
         return osszSuly;
