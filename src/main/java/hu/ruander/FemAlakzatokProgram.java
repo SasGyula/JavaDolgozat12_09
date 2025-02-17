@@ -27,11 +27,11 @@ public class FemAlakzatokProgram {
 
     public double gombokOsszSuly() {
         double osszSuly = 0;
-//        for (FemAlakzat femAlakzat : lista) {
-//            if(lista.contains(Gomb)) {
-//                osszSuly += femAlakzat.suly();
-//            }
-//        }
+        for (FemAlakzat femAlakzat : lista) {
+            if(femAlakzat.getClass() == Gomb.class) {
+                osszSuly += femAlakzat.suly();
+            }
+        }
         return osszSuly;
     }
 
